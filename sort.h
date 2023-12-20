@@ -44,7 +44,11 @@ void swap(int *array, size_t size, int *a, int *b);
 void radix_sort(int *array, size_t size);
 int get_digit(long number, int digit);
 int radix_pass(int *array, ssize_t size, int digit, int *new_array);
-
+void bitonic_sort(int *array, size_t size);
+void _bitonic_sort(int up, int *array, size_t size, size_t start, size_t end);
+void bitonic_merge(int up, int *array, size_t start, size_t end);
+void bitonic_compare(int up, int *array, size_t start, size_t end);
+void swapy(int *a, int *b);
 
 #endif /* SORT_H */
 
