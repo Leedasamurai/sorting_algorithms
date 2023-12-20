@@ -41,6 +41,10 @@ void heap_sort(int *array, size_t size);
 void heapify(int *array, size_t size);
 void siftdown(int *array, size_t start, size_t end, size_t size);
 void swap(int *array, size_t size, int *a, int *b);
+void radix_sort(int *array, size_t size);
+int get_digit(long number, int digit);
+int radix_pass(int *array, ssize_t size, int digit, int *new_array);
+
 
 #endif /* SORT_H */
 
