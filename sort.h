@@ -37,6 +37,10 @@ int integer_count(int *array, size_t size, int range);
 void merge_sort(int *array, size_t size);
 void merge(int *array, int *temp, size_t left, size_t mid, size_t right);
 void merge_sort_recursive(int *array, int *temp, size_t left, size_t right);
+void heap_sort(int *array, size_t size);
+void heapify(int *array, size_t size);
+void siftdown(int *array, size_t start, size_t end, size_t size);
+void swap(int *array, size_t size, int *a, int *b);
 
 #endif /* SORT_H */
 
